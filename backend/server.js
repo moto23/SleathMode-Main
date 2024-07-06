@@ -18,7 +18,7 @@ app.use(cors(
 
   {
   
-  origin: ["https://sleath-frontend.vercel.app"], 
+  origin: [""], 
   methods: ["POST", "GET"],
   credentials:true
   
