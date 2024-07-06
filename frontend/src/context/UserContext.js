@@ -12,7 +12,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('authToken');
     if (token) {
-      axios.get('https://sleath-backend.vercel.app/api/auth/me', {
+      axios.get('https://stealthmode-server.vercel.app/api/auth/me', {
         headers: { 'Authorization': `Bearer ${token}` }
       })
       .then(response => {
