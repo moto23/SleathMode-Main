@@ -50,7 +50,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('https://sleath-backend.vercel.app/api/auth/register', {
+      const response = await axios.post('https://stealthmode-server.vercel.app/api/auth/register', {
         fullName: formData.fullName,
         email: formData.email,
         password: formData.password,
