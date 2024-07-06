@@ -9,7 +9,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('https://sleath-backend.vercel.app/api/courses');
+        const response = await axios.get('https://stealthmode-server.vercel.app/api/courses');
         setCourses(response.data);
       } catch (error) {
         console.error(error);
